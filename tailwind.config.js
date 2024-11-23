@@ -8,6 +8,7 @@ export default {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
         './resources/js/**/*.jsx',
+        './resources/js/**/*.tsx',
     ],
 
     theme: {
@@ -15,6 +16,11 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            dropShadow: {
+                'custom': '0 35px 35px rgba(0, 0, 0, 0.25)',
+                '3xl': '0 35px 35px rgba(0, 0, 0, 0.3)',
+                'colored': '0 35px 35px rgba(8, 112, 184, 0.7)',
+              }
         },
     },
 

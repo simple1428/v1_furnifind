@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gsm {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(17.5px);
+  -webkit-backdrop-filter: blur(17.5px);
+  border-radius: 10px;
+}
+.hero-slider .slick-dots {
+  bottom: 25px;
+  z-index: 20;
+}
+
+.hero-slider .slick-dots li button:before {
+  display: none;
+}
+
+.hero-slider .slick-prev,
+.hero-slider .slick-next {
+  z-index: 20;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.hero-slider .slick-prev {
+  left: 20px;
+}
+
+.hero-slider .slick-next {
+  right: 20px;
+}
+
+.hero-slider .slick-prev:hover,
+.hero-slider .slick-next:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.hero-slider .slick-prev:before,
+.hero-slider .slick-next:before {
+  color: #333;
+}
+.aaa {
+  filter: drop-shadow(12px 50px 8px rgba(0, 0, 0, 0.35));
+}
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+/* Tambahkan di file CSS Anda */
+@media (max-width: 640px) {
+  .hero-slider {
+    height: auto;
+  }
+
+  .hero-slider .slick-slide {
+    height: auto;
+  }
+}
