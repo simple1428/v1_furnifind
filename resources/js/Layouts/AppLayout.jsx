@@ -8,12 +8,14 @@ import Navbar from "../Components/PartLayouts/NavbarHome";
 
 const AppLayout = ({ children, categories }) => {
   return (
-    <div>
-      <Head title="Furniture" />
-      <Navbar />
-      <main>{children}</main>
+    <section className="flex flex-col justify-between min-h-screen">
+      <div>
+        <Head title="Furniture" />
+        <Navbar />
+        <main>{children}</main>
+      </div>
       <FooterHome categories={categories} />
-    </div>
+    </section>
   );
 };
 
