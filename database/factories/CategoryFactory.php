@@ -19,10 +19,23 @@ class CategoryFactory extends Factory
 
     public function definition()
     {
-        return [
-            'name' => $this->faker->unique()->word(),
-            'description' => $this->faker->sentence(10),
-            'image' => $this->faker->imageUrl(640, 480, 'category', true), // Menghasilkan URL gambar palsu
-        ];
+            $categories = [
+                "Living Room",
+                "Bedroom",
+                "Dining Room",
+                "Home Office",
+                "Outdoor",
+                "Kids' Room",
+                "Entryway",
+                "Bathroom",
+                "Storage & Organization",
+                "Decor",
+            ];
+
+            return [
+                'name' => $this->faker->unique()->randomElement($categories), // Nama kategori
+                'description' => $this->faker->sentence(10), // Deskripsi kategori
+                'image' => $this->faker->imageUrl(640, 480, 'furniture', true, 'Category Image'), // Gambar kategori
+            ];
     }
 }

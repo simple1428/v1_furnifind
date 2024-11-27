@@ -166,3 +166,61 @@ html {
     background-position: 0% 50%;
   }
 }
+/* Store Banner Slider Styles */
+.store-banner-slider {
+  margin-bottom: 2rem;
+}
+
+.store-banner-slider .slick-dots {
+  bottom: 20px;
+}
+
+.store-banner-slider .slick-dots li button:before {
+  display: none;
+}
+
+.store-banner-slider .slick-prev,
+.store-banner-slider .slick-next {
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.store-banner-slider .slick-prev {
+  left: 20px;
+}
+
+.store-banner-slider .slick-next {
+  right: 20px;
+}
+
+.store-banner-slider .slick-prev:hover,
+.store-banner-slider .slick-next:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.store-banner-slider .slick-prev:before,
+.store-banner-slider .slick-next:before {
+  color: #1a1a1a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .store-banner-slider .slick-prev,
+  .store-banner-slider .slick-next {
+    width: 32px;
+    height: 32px;
+  }
+
+  .store-banner-slider .slick-prev {
+    left: 10px;
+  }
+
+  .store-banner-slider .slick-next {
+    right: 10px;
+  }
+}

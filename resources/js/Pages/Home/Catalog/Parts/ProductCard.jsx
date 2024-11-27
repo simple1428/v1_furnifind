@@ -12,6 +12,7 @@ const ProductCard = ({ product }) => {
     AOS.init();
     AOS.refresh();
   }, []);
+  console.log(product);
 
   return (
     <article
