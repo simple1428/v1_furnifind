@@ -32,7 +32,7 @@ export default function Navbar() {
       ],
     },
     { name: "Sale", route: "#" },
-    { name: "Blog", route: "#" },
+    { name: "Blog", route: route("blog.index") },
   ];
 
   return (

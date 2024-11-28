@@ -84,14 +84,22 @@ const HeroSection = () => {
                   </div>
                 </div>
               </div>
-              <div className="max-w-7xl mx-auto bg-blue-400 pb-5 rounded-b-2xl relative drop-shadow-lg flex justify-center items-center">
-                <div className="relative">
+              <div className="max-w-7xl mx-auto bg-blue-400 pb-5 rounded-b-2xl relative drop-shadow-lg">
+                <div className="group relative flex justify-center items-center">
+                  {" "}
+                  {/* Pindahkan class group ke sini */}
                   <img
                     src={`${asset}product/2.png`}
                     alt=""
                     className="w-full md:w-[700px] drop-shadow-xl relative z-10 transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-20 bg-gradient-to-t from-yellow-300/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl z-0"></div>
+                  {/* Efek cahaya */}
+                  <div
+                    className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-32
+      bg-gradient-radial from-yellow-300/70 via-yellow-300/30 to-transparent
+      opacity-0 group-hover:opacity-100 transition-all duration-300
+      blur-2xl -z-10"
+                  ></div>
                 </div>
               </div>
             </div>
